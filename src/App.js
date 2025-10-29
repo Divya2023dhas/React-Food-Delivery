@@ -17,8 +17,9 @@ function App() {
         <Route path="/" element={<Menu />} />
       
       </Routes>
+      <Footer/>
     </Router>
-    <Footer/>
+  
   );
 }
 
