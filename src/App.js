@@ -1,24 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Menu from "./pages/Menu";
+import Footer from "./components/Footer";
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Navbar />
+       <section className="bg-black text-white text-center py-16">
+        <h1 className="text-4xl font-extrabold tracking-wide">
+          Your culinary adventure await
+        </h1>
+      </section>
+      <Routes>
+        <Route path="/" element={<Menu />} />
+      
+      </Routes>
+    </Router>
+    <Footer/>
   );
 }
 
