@@ -1,6 +1,10 @@
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Menu from "./pages/Menu";
+import Pizzapage from "./pages/Pizzapage"; 
+import Burgerpage from"./pages/Burgerpage";
+import Pastapages from"./pages/Pastapages";
+
 import Footer from "./components/Footer";
 
 
@@ -15,6 +19,9 @@ function App() {
       </section>
       <Routes>
         <Route path="/" element={<Menu />} />
+         <Route path="/Pizza" element={<Pizzapage />} />
+         <Route path="/Burger" element={<Burgerpage/>}/>
+         <Route path="/Pasta" element={<Pastapages/>}/>
       
       </Routes>
       <Footer/>
