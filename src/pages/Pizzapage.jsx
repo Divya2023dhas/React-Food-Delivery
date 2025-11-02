@@ -31,7 +31,7 @@ const PizzaPage = () => {
     <div className="p-10">
          <div className="relative">
         <img
-          src="/images/PIZA PANNER.jpg"   
+          src="/images/deals.jpg"   
           alt="Pizza Banner"
           className="w-full h-auto object-contain"
         />

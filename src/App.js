@@ -1,32 +1,38 @@
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Menu from "./pages/Menu";
-import Pizzapage from "./pages/Pizzapage"; 
-import Burgerpage from"./pages/Burgerpage";
-import Pastapages from"./pages/Pastapages";
-
-import Footer from "./components/Footer";
-
+import Pizzapage from "./pages/Pizzapage";
+import Burgerpage from "./pages/Burgerpage";
+import Pastapages from "./pages/Pastapages";
+import Kfc from "./pages/Kfc";
+import Deals from "./pages/Deals";
+import Addcart from "./pages/Addcart";
+import Footer from"./components/Footer";
 
 function App() {
   return (
-    <Router>
+    <BrowserRouter>
       <Navbar />
-       <section className="bg-black text-white text-center py-16">
+
+      <section className="bg-black text-white text-center py-16">
         <h1 className="text-4xl font-extrabold tracking-wide">
-          Your culinary adventure await
+          Your culinary adventure awaits
         </h1>
       </section>
+
       <Routes>
         <Route path="/" element={<Menu />} />
-         <Route path="/Pizza" element={<Pizzapage />} />
-         <Route path="/Burger" element={<Burgerpage/>}/>
-         <Route path="/Pasta" element={<Pastapages/>}/>
-      
+        <Route path="/pizza" element={<Pizzapage />} />
+        <Route path="/burger" element={<Burgerpage />} />
+        <Route path="/pasta" element={<Pastapages />} />
+        <Route path="/chicken" element={<Kfc />} />
+        <Route path="/deals" element={<Deals/>}/>
+         <Route path="/addcart" element={<Addcart/>}/>
+
       </Routes>
       <Footer/>
-    </Router>
-  
+    </BrowserRouter>
   );
 }
 
