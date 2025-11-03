@@ -6,6 +6,8 @@ import Pizzapage from "./pages/Pizzapage";
 import Burgerpage from "./pages/Burgerpage";
 import Pastapages from "./pages/Pastapages";
 import Kfc from "./pages/Kfc";
+import Momos from "./pages/Momos";
+import Sandwitch from"./pages/Sandwitch";
 import Deals from "./pages/Deals";
 import Addcart from "./pages/Addcart";
 import Footer from"./components/Footer";
@@ -29,6 +31,8 @@ function App() {
         <Route path="/chicken" element={<Kfc />} />
         <Route path="/deals" element={<Deals/>}/>
          <Route path="/addcart" element={<Addcart/>}/>
+         <Route path="/Momos" element={<Momos/>}/>
+         <Route path="/sandwitch" element={<Sandwitch/>}/>
 
       </Routes>
       <Footer/>

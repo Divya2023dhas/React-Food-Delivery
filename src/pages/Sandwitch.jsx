@@ -1,33 +1,33 @@
 const Stars = [
   {
     id: 1,
-    name: "Chicken-Momo",
+    name: "Chicken-Sandwitch",
     price: "₹190",
-    image: "/images/chicken-momo.jpeg",
+    image: "/images/grilledsan.jpeg",
   },
   {
     id: 2,
-    name: "veg-momo",
-    price: "₹200",
-    image: "/images/momos.jpg",
+    name: "veg-Sandwitch",
+    price: "₹100",
+    image: "/images/grilledsandwitch.jpg",
   },
    {
     id:3,
-    name: "Veg-Spicy Momo",
+    name: "panner sandwitch",
     price: "₹180",
-    image: "/images/momo2.jpeg",
+    image: "/images/sandwitch.jpeg",
   },
   {
     id:4,
-    name: " Steam-WheatMomo",
-    price: "₹320",
-    image: "/images/Recipemomo.jpg",
+    name: " Mushroom sandwitch",
+    price: "₹120",
+    image: "/images/grilledsan.jpg",
     
   },
 
 ];
 
-const Momos = () => {
+const Sandwitch = () => {
   return (
     <div className="p-10">
          
@@ -55,4 +55,4 @@ const Momos = () => {
   );
 };
 
-export default Momos;
+export default Sandwitch;

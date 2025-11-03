@@ -1,4 +1,4 @@
-import React,{useState} from "react";
+import React,{useState,useEffect} from "react";
 import { Link } from "react-router-dom";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
@@ -8,6 +8,39 @@ import Location from "./Location";
 function Navbar() {
   
   const [showLocationPopup, setShowLocationPopup] = useState(false);
+    const [query, setQuery] = useState("");
+  const [debouncedQuery, setDebouncedQuery] = useState("");
+  const [suggestions, setSuggestions] = useState([]);
+
+  // sample food items
+  const foods = [
+    "Pizza",
+    "Pasta",
+    "Paneer Pasta",
+    "Pasta with Cheese",
+    "Pav Bhaji",
+    "Parotta",
+    "Paneer Butter Masala",
+  ];
+    useEffect(() => {
+    const timer = setTimeout(() => {
+      setDebouncedQuery(query);
+    }, 400);
+    return () => clearTimeout(timer);
+  }, [query]);
+
+
+  useEffect(() => {
+    if (debouncedQuery.trim() === "") {
+      setSuggestions([]);
+      return;
+    }
+
+    const result = foods.filter((item) =>
+      item.toLowerCase().includes(debouncedQuery.toLowerCase())
+    );
+    setSuggestions(result);
+  }, [debouncedQuery]);
 return (
   <>
     
@@ -43,8 +76,26 @@ return (
           <input
             type="text"
             placeholder="Search..."
+             onChange={(e) => setQuery(e.target.value)}
             className="bg-transparent outline-none px-2 text-sm w-full"
           />
+          {suggestions.length > 0 && (
+          <ul className="absolute top-11 left-0 right-0 bg-white border border-gray-200 rounded-lg shadow-md z-10">
+            {suggestions.map((item, index) => (
+              <li
+                key={index}
+                className="px-4 py-2 hover:bg-red-100 cursor-pointer"
+                onClick={() => {
+                  setQuery(item);
+                  setSuggestions([]);
+                }}
+                onMouseDown={(e) => e.preventDefault()}
+              >
+                {item}
+              </li>
+            ))}
+          </ul>
+        )}
         </div>
         <div className="flex items-center space-x-4">
          
