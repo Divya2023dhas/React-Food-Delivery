@@ -14,7 +14,7 @@ export default function Footer() {
           {/* Logo and text */}
           <div className="flex items-center gap-3 mb-4 md:mb-0">
             <img
-              src="/images/Food logo.png"
+              src="Images/Food logo.png"
               alt="FoodLogo"
               className="w-14 h-14 rounded-full object-cover"
             />
