@@ -7,8 +7,8 @@ function Addcart() {
 
  
   const items = [
-    { id: 1, name: "Veg Pizza", price: 200, img: "/Images/PIZZ2.jpg" },
-    { id: 2, name: "Burger Combo", price: 150, img: "/Images/burger.jpeg" },
+    { id: 1, name: "Veg Pizza", price: 200, img: "Images/PIZZ2.jpg" },
+    { id: 2, name: "Burger Combo", price: 150, img: "Images/burger.jpeg" },
   ];
 
  

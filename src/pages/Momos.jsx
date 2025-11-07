@@ -3,25 +3,25 @@ const Stars = [
     id: 1,
     name: "Chicken-Momo",
     price: "₹190",
-    image: "/images/chicken-momo.jpeg",
+    image: "images/chicken-momo.jpeg",
   },
   {
     id: 2,
     name: "veg-momo",
     price: "₹200",
-    image: "/images/momos.jpg",
+    image: "images/momos.jpg",
   },
    {
     id:3,
     name: "Veg-Spicy Momo",
     price: "₹180",
-    image: "/images/momo2.jpeg",
+    image: "images/momo2.jpeg",
   },
   {
     id:4,
     name: " Steam-WheatMomo",
     price: "₹320",
-    image: "/images/Recipemomo.jpg",
+    image: "images/Recipemomo.jpg",
     
   },
 

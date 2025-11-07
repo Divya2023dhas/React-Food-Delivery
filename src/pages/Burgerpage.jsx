@@ -3,25 +3,25 @@ const burgers = [
     id: 1,
     name: "Cheeseburger",
     price: "₹250",
-    image: "/images/BURGER.jpg",
+    image: "images/BURGER.jpg",
   },
   {
     id: 2,
     name: "Classic Burger",
     price: "₹320",
-    image: "/images/burger-chili-cheese-rezept.jpg",
+    image: "images/burger-chili-cheese-rezept.jpg",
   },
    {
     id:3,
     name: "Chicken Burger",
     price: "₹320",
-    image: "/images/Purger.png",
+    image: "images/Purger.png",
   },
   {
     id:4,
     name: " Butter Burger",
     price: "₹320",
-    image: "/images/burger.jpeg",
+    image: "images/burger.jpeg",
   },
 
 ];

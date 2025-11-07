@@ -2,14 +2,14 @@ import { Link } from "react-router-dom";
 
 const Home = () => {
   const items = [
-    { name: "Pizza", image: "/images/pizza.jpg", path: "/pizza" },
-    { name: "Burger", image: "/images/burger.jpeg", path: "/burger" },
-    { name: "Pasta", image: "/images/pasta.jpg", path: "/pasta" },
-    { name: "Sandwitch", image: "/images/grilledsandwitch.jpg", path: "/sandwitch" },
-    { name: "Drinks", image: "/images/RefreshingDrinks.jpg", path: "/Drinks" },
-    { name: "Fries", image: "/images/french-fries-1.jpg", path: "/fries" },
-    { name: "chicken", image: "/images/kfc.jpg", path: "/chicken" },
-    { name: "momos", image: "/images/whole-wheat-momos-recipe.jpg", path: "/momos" },
+    { name: "Pizza", image: "images/pizza.jpg", path: "/pizza" },
+    { name: "Burger", image: "images/burger.jpeg", path: "/burger" },
+    { name: "Pasta", image: "images/pasta.jpg", path: "/pasta" },
+    { name: "Sandwitch", image: "images/grilledsandwitch.jpg", path: "/sandwitch" },
+    { name: "Drinks", image: "images/RefreshingDrinks.jpg", path: "/Drinks" },
+    { name: "Fries", image: "images/french-fries-1.jpg", path: "/fries" },
+    { name: "chicken", image: "images/kfc.jpg", path: "/chicken" },
+    { name: "momos", image: "images/whole-wheat-momos-recipe.jpg", path: "/momos" },
   ];
 
   return (
