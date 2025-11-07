@@ -15,7 +15,7 @@ const burgers = [
     id:3,
     name: "Chicken Burger",
     price: "₹320",
-    image: "Images/Purger.png",
+    image: "Images/purger.png",
   },
   {
     id:4,

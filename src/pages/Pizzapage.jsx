@@ -15,7 +15,7 @@ const pizzas = [
     id:3,
     name: "VEG -loaaded ",
     price: "₹320",
-    image:"Images/Pizza.jpg",
+    image:"Images/pizza.jpg",
   },
   {
     id:4,

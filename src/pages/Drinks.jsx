@@ -3,7 +3,7 @@ const stars = [
     id: 1,
     name: "Mojito",
     price: "₹250",
-    image: "images/Drink1.jpg",
+    image: "Images/Drink1.jpg",
   },
   {
     id: 2,
