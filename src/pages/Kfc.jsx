@@ -3,25 +3,25 @@ const Chickens= [
     id: 1,
     name: "6-piece combo",
     price: "₹290",
-    image: process.env.PUBLIC_URL + "/images/Kfc.jpg",
+    image: "Images/Kfc.jpg",
   },
   {
     id: 2,
     name: "wings",
     price: "₹150",
-    image:  process.env.PUBLIC_URL +"/images/kfc-fried-chicken-masala.jpg",
+    image: "Images/kfc-fried-chicken-masala.jpg",
   },
    {
     id:3,
     name: "chicken thig",
     price: "₹350",
-    image: process.env.PUBLIC_URL + "/images/FREESTRIPS.jpg",
+    image:  "Images/FREESTRIPS.jpg",
   },
   {
     id:4,
     name: "smoky grilled ",
     price: "₹320",
-    image:  process.env.PUBLIC_URL +"/images/KFC1jpg.jpg",
+    image:  "Images/KFC1jpg.jpg",
   },
 
 ];

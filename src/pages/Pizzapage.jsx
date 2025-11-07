@@ -3,25 +3,25 @@ const pizzas = [
     id: 1,
     name: "Margherita",
     price: "₹250",
-    image:  process.env.PUBLIC_URL +"/images/PIZ1.jpeg",
+    image: "Images/PIZ1.jpeg",
   },
   {
     id: 2,
     name: "Cheese Burst",
     price: "₹320",
-    image:  process.env.PUBLIC_URL +"/images/PIZZ2.jpg",
+    image:  "Images/PIZZ2.jpg",
   },
    {
     id:3,
     name: "VEG -loaaded ",
     price: "₹320",
-    image: process.env.PUBLIC_URL + "/images/Pizza.jpg",
+    image:"Images/Pizza.jpg",
   },
   {
     id:4,
     name: "Honey-carlic chicken ",
     price: "₹320",
-    image:  process.env.PUBLIC_URL +"/images/Pizza-3007395.jpg",
+    image: "Images/Pizza-3007395.jpg",
   },
 
 ];
@@ -31,7 +31,7 @@ const PizzaPage = () => {
     <div className="p-10">
          <div className="relative">
         <img
-          src={process.env.PUBLIC_URL +"/images/deals.jpg" }  
+          src="Images/deals.jpg"  
           alt="Pizza Banner"
           className="w-full h-auto object-contain"
         />

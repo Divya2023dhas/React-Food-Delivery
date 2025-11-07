@@ -3,25 +3,25 @@ const Pastas = [
     id: 1,
     name: "White sauce pasta",
     price: "₹190",
-    image: process.env.PUBLIC_URL + "/images/pasta.jpg",
+    image:"Images/pasta.jpg",
   },
   {
     id: 2,
     name: "spicy pasta",
     price: "₹200",
-    image:  process.env.PUBLIC_URL +"/images/spicy pasta.jpg",
+    image: "Images/spicy pasta.jpg",
   },
    {
     id:3,
     name: "veg-spicy noodless",
     price: "₹180",
-    image: process.env.PUBLIC_URL + "/images/noodles1.jpg",
+    image:  "Images/noodles1.jpg",
   },
   {
     id:4,
     name: " chicken noodless",
     price: "₹320",
-    image: process.env.PUBLIC_URL + "/images/noodles.jpeg",
+    image:  "Images/noodles.jpeg",
   },
 
 ];
