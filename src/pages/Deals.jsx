@@ -26,7 +26,7 @@ const Deals = () => {
     <div className="p-10">
          <div className="relative">
         <img
-          src="/images/deals.jpg"   
+          src="/images/Red White Orange Modern Minimalist Fast-food Promotion Banner.png"   
           alt="Pizza Banner"
           className="w-full h-auto object-contain"
         />

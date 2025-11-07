@@ -3,7 +3,7 @@ const Staters = [
     id: 1,
     name: "Chicken-Sandwitch",
     price: "₹190",
-    image: "/images/grilledsan.jpeg",
+    image: "/images/grilledsan.jpg",
   },
   {
     id: 2,
@@ -15,7 +15,7 @@ const Staters = [
     id:3,
     name: "panner sandwitch",
     price: "₹180",
-    image: "/images/sandwitch.jpeg",
+    image: "/images/sandwich.jpg",
   },
   {
     id:4,

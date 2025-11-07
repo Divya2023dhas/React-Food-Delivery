@@ -3,7 +3,9 @@ import { Link } from "react-router-dom";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import SearchIcon from "@mui/icons-material/Search";
+import LoginIcon from "@mui/icons-material/Login";
 import Location from "./Location"; 
+import Login from"./Login";
 
 function Navbar() {
   
@@ -11,6 +13,7 @@ function Navbar() {
     const [query, setQuery] = useState("");
   const [debouncedQuery, setDebouncedQuery] = useState("");
   const [suggestions, setSuggestions] = useState([]);
+    const [showLogin, setShowLogin] = useState(false);
 
   // sample food items
   const foods = [
@@ -97,9 +100,16 @@ return (
           </ul>
         )}
         </div>
+         <button
+            onClick={() => setShowLogin(true)}
+            className="flex items-center gap-1 bg-orange-500 hover:bg-orange-600 px-3 py-1 rounded-lg text-white"
+          >
+            <LoginIcon />
+            <span>Login</span>
+          </button>
         <div className="flex items-center space-x-4">
          
-          <Link to="/adminpage" className="p-2 hover:bg-gray-100 rounded-full">
+          <Link to="/admin" className="p-2 hover:bg-gray-100 rounded-full">
             <AccountCircleIcon />
           </Link>
   <Link
@@ -114,6 +124,7 @@ return (
         </div>
       </div>
     </div>
+     {showLogin && <Login onClose={() => setShowLogin(false)} />}
     
      { showLocationPopup && (
         <Location onClose={() => setShowLocationPopup(false)} />

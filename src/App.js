@@ -14,7 +14,7 @@ import Addcart from "./pages/Addcart";
 import Adminpage from "./pages/Adminpage";
 import Footer from "./components/Footer";
 
-//  Controller Component
+
 function Layout() {
   const location = useLocation();
   const isAdminPage = location.pathname === "/admin";

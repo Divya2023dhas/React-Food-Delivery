@@ -5,7 +5,7 @@ const Home = () => {
     { name: "Pizza", image: "/images/pizza.jpg", path: "/pizza" },
     { name: "Burger", image: "/images/burger.jpeg", path: "/burger" },
     { name: "Pasta", image: "/images/pasta.jpg", path: "/pasta" },
-    { name: "Sandwich", image: "/images/grilledsandwitch.jpg", path: "/sandwich" },
+    { name: "Sandwitch", image: "/images/grilledsandwitch.jpg", path: "/sandwitch" },
     { name: "Drinks", image: "/images/RefreshingDrinks.jpg", path: "/Drinks" },
     { name: "Fries", image: "/images/french-fries-1.jpg", path: "/fries" },
     { name: "chicken", image: "/images/kfc.jpg", path: "/chicken" },
