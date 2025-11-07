@@ -2,14 +2,14 @@ import { Link } from "react-router-dom";
 
 const Home = () => {
   const items = [
-    { name: "Pizza", image: "images/pizza.jpg", path: "/pizza" },
-    { name: "Burger", image: "images/burger.jpeg", path: "/burger" },
-    { name: "Pasta", image: "images/pasta.jpg", path: "/pasta" },
-    { name: "Sandwitch", image: "images/grilledsandwitch.jpg", path: "/sandwitch" },
-    { name: "Drinks", image: "images/RefreshingDrinks.jpg", path: "/Drinks" },
-    { name: "Fries", image: "images/french-fries-1.jpg", path: "/fries" },
-    { name: "chicken", image: "images/kfc.jpg", path: "/chicken" },
-    { name: "momos", image: "images/whole-wheat-momos-recipe.jpg", path: "/momos" },
+    { name: "Pizza", image: process.env.PUBLIC_URL + "/images/pizza.jpg", path: "/pizza" },
+    { name: "Burger", image: process.env.PUBLIC_URL + "/images/burger.jpeg", path: "/burger" },
+    { name: "Pasta", image: process.env.PUBLIC_URL + "/images/pasta.jpg", path: "/pasta" },
+    { name: "Sandwitch", image:  process.env.PUBLIC_URL +"/images/grilledsandwitch.jpg", path: "/sandwitch" },
+    { name: "Drinks", image:  process.env.PUBLIC_URL +"/images/RefreshingDrinks.jpg", path: "/Drinks" },
+    { name: "Fries", image:  process.env.PUBLIC_URL +"/images/french-fries-1.jpg", path: "/fries" },
+    { name: "chicken", image: process.env.PUBLIC_URL + "/images/kfc.jpg", path: "/chicken" },
+    { name: "momos", image:  process.env.PUBLIC_URL +"/images/whole-wheat-momos-recipe.jpg", path: "/momos" },
   ];
 
   return (

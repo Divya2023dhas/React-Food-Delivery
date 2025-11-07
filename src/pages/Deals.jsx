@@ -2,21 +2,21 @@ import { Link } from "react-router-dom";
 const  Panners = [
   {
     id: 1,
-   image: "images/Orange Red and Yellow Bold Burger Day Offer Instagram Post.png",
+   image:process.env.PUBLIC_URL + "/images/Orange Red and Yellow Bold Burger Day Offer Instagram Post.png",
   },
   {
     id: 2,
    
-    image: "images/Red Black Modern Boneless Chicken Food Instagram Post.png",
+    image: "/process.env.PUBLIC_URL +images/Red Black Modern Boneless Chicken Food Instagram Post.png",
   },
    {
     id:3,
-    image: "images/KFC1jpg.jpg",
+    image:process.env.PUBLIC_URL + "/images/KFC1jpg.jpg",
   },
   {
     id:4,
    
-    image: "images/Pizza-3007395.jpg",
+    image:process.env.PUBLIC_URL + "/images/Pizza-3007395.jpg",
   },
 
 ];
@@ -26,7 +26,7 @@ const Deals = () => {
     <div className="p-10">
          <div className="relative">
         <img
-          src="images/Red White Orange Modern Minimalist Fast-food Promotion Banner.png"   
+          src={process.env.PUBLIC_URL +"/images/Red White Orange Modern Minimalist Fast-food Promotion Banner.png" }  
           alt="Pizza Banner"
           className="w-full h-auto object-contain"
         />

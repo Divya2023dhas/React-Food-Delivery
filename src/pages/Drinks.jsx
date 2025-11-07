@@ -3,19 +3,19 @@ const stars = [
     id: 1,
     name: "Mojito",
     price: "₹250",
-    image: "/images/Drink1.jpg",
+    image: process.env.PUBLIC_URL +"/images/Drink1.jpg",
   },
   {
     id: 2,
     name: "Fresh juice",
     price: "₹320",
-    image: "/images/drinks2.jpg",
+    image: process.env.PUBLIC_URL +"/images/drinks2.jpg",
   },
    {
     id:3,
     name: "soda-juice",
     price: "₹320",
-    image: "/images/RefreshingDrinks.jpg",
+    image: process.env.PUBLIC_URL +"/images/RefreshingDrinks.jpg",
   },
  
 

@@ -3,25 +3,25 @@ const Staters = [
     id: 1,
     name: "Chicken-Sandwitch",
     price: "₹190",
-    image: "images/grilledsan.jpg",
+    image:process.env.PUBLIC_URL + "/images/grilledsan.jpg",
   },
   {
     id: 2,
     name: "veg-Sandwitch",
     price: "₹100",
-    image: "images/grilledsandwitch.jpg",
+    image:process.env.PUBLIC_URL + "/images/grilledsandwitch.jpg",
   },
    {
     id:3,
     name: "panner sandwitch",
     price: "₹180",
-    image: "images/sandwich.jpg",
+    image:process.env.PUBLIC_URL + "/images/sandwich.jpg",
   },
   {
     id:4,
     name: " Mushroom sandwitch",
     price: "₹120",
-    image: "images/grilledsan.jpg",
+    image:process.env.PUBLIC_URL + "/images/grilledsan.jpg",
     
   },
 
