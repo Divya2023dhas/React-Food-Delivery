@@ -8,7 +8,7 @@ const Home = () => {
     { name: "Sandwitch", image:  "Images/grilledsandwitch.jpg", path: "/sandwitch" },
     { name: "Drinks", image:  "Images/RefreshingDrinks.jpg", path: "/Drinks" },
     { name: "Fries", image: "Images/french-fries-1.jpg", path: "/fries" },
-    { name: "chicken", image:  "Images/kfc.jpg", path: "/chicken" },
+    { name: "chicken", image:  "Images/Kfc.jpg", path: "/chicken" },
     { name: "momos", image: "Images/whole-wheat-momos-recipe.jpg", path: "/momos" },
   ];
 
